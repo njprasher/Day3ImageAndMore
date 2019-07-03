@@ -12,6 +12,10 @@
 		4C6ED69922CC11B500581819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED69722CC11B500581819 /* Main.storyboard */; };
 		4C6ED69B22CC11B700581819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED69A22CC11B700581819 /* Assets.xcassets */; };
 		4C6ED69E22CC11B700581819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED69C22CC11B700581819 /* LaunchScreen.storyboard */; };
+		4C6ED6B822CC142500581819 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B222CC142500581819 /* home.png */; };
+		4C6ED6B922CC142500581819 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B322CC142500581819 /* lion.png */; };
+		4C6ED6BA22CC142500581819 /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B422CC142500581819 /* elephant.png */; };
+		4C6ED6BD22CC142500581819 /* gorilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B722CC142500581819 /* gorilla.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		4C6ED69A22CC11B700581819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6ED69D22CC11B700581819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6ED69F22CC11B700581819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C6ED6B222CC142500581819 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		4C6ED6B322CC142500581819 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		4C6ED6B422CC142500581819 /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
+		4C6ED6B722CC142500581819 /* gorilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gorilla.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		4C6ED69222CC11B500581819 /* Day3ImageAndMore */ = {
 			isa = PBXGroup;
 			children = (
+				4C6ED6A522CC126300581819 /* Images */,
 				4C6ED69322CC11B500581819 /* AppDelegate.swift */,
 				4C6ED69522CC11B500581819 /* ViewController.swift */,
 				4C6ED69722CC11B500581819 /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				4C6ED69F22CC11B700581819 /* Info.plist */,
 			);
 			path = Day3ImageAndMore;
+			sourceTree = "<group>";
+		};
+		4C6ED6A522CC126300581819 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4C6ED6B422CC142500581819 /* elephant.png */,
+				4C6ED6B722CC142500581819 /* gorilla.png */,
+				4C6ED6B222CC142500581819 /* home.png */,
+				4C6ED6B322CC142500581819 /* lion.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6ED6BA22CC142500581819 /* elephant.png in Resources */,
+				4C6ED6B822CC142500581819 /* home.png in Resources */,
+				4C6ED6B922CC142500581819 /* lion.png in Resources */,
+				4C6ED6BD22CC142500581819 /* gorilla.png in Resources */,
 				4C6ED69E22CC11B700581819 /* LaunchScreen.storyboard in Resources */,
 				4C6ED69B22CC11B700581819 /* Assets.xcassets in Resources */,
 				4C6ED69922CC11B500581819 /* Main.storyboard in Resources */,

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day3ImageAndMore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.png" translatesAutoresizingMaskIntoConstraints="NO" id="Izu-qu-GJL">
+                                <rect key="frame" x="20" y="104" width="374" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFn-sP-K7m">
+                                <rect key="frame" x="20" y="420" width="374" height="30"/>
+                                <state key="normal" title="Change image"/>
+                                <connections>
+                                    <action selector="btnSetImageClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pW6-rv-sV5"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-od-NNL">
+                                <rect key="frame" x="18" y="530" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.54098731280000001" green="0.89445644619999998" blue="0.68447583909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="54d-LZ-Nkg"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lj4-hN-GAx">
+                                <rect key="frame" x="180" y="651" width="56" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="w3Q-l4-6xJ"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-lA-ZP9">
+                                <rect key="frame" x="186" y="592" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yk6-jT-2rz">
+                                <rect key="frame" x="20" y="722" width="374" height="29"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Lion"/>
+                                    <segment title="Gorilla"/>
+                                    <segment title="Elephant"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TYF-2o-zO6"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yk6-jT-2rz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2JM-un-Z12"/>
+                            <constraint firstItem="Izu-qu-GJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61h-9J-hhW"/>
+                            <constraint firstItem="mFn-sP-K7m" firstAttribute="top" secondItem="Izu-qu-GJL" secondAttribute="bottom" constant="60" id="B24-za-5vJ"/>
+                            <constraint firstItem="Xpe-od-NNL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BN4-rq-Glx"/>
+                            <constraint firstItem="Izu-qu-GJL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Fdq-9B-xc2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lj4-hN-GAx" secondAttribute="bottom" constant="180" id="Jzg-xv-TQU"/>
+                            <constraint firstItem="yk6-jT-2rz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KP9-hR-Ibh"/>
+                            <constraint firstItem="mFn-sP-K7m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N3S-3C-5Ga"/>
+                            <constraint firstItem="yk6-jT-2rz" firstAttribute="top" secondItem="lj4-hN-GAx" secondAttribute="bottom" constant="40" id="OG2-CJ-4J2"/>
+                            <constraint firstItem="lj4-hN-GAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WP0-Bz-6Xh"/>
+                            <constraint firstItem="Xpe-od-NNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xjs-2Q-vDB"/>
+                            <constraint firstItem="lj4-hN-GAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="ZyE-ef-DhR"/>
+                            <constraint firstItem="Xpe-od-NNL" firstAttribute="top" secondItem="mFn-sP-K7m" secondAttribute="bottom" constant="80" id="dO5-Cg-cIY"/>
+                            <constraint firstItem="iaJ-lA-ZP9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jGc-HX-iCP"/>
+                            <constraint firstItem="lj4-hN-GAx" firstAttribute="top" secondItem="iaJ-lA-ZP9" secondAttribute="bottom" constant="38" id="mNl-Ut-kk8"/>
+                            <constraint firstItem="Izu-qu-GJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="npG-II-0Ty"/>
+                            <constraint firstItem="mFn-sP-K7m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zF3-aM-Bm8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgJungle" destination="Izu-qu-GJL" id="eN0-QB-RKS"/>
+                        <outlet property="txtlbl" destination="iaJ-lA-ZP9" id="ClW-qP-cbR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home.png" width="256" height="256"/>
+    </resources>
 </document>
