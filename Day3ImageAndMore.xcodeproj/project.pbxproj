@@ -16,6 +16,8 @@
 		4C6ED6B922CC142500581819 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B322CC142500581819 /* lion.png */; };
 		4C6ED6BA22CC142500581819 /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B422CC142500581819 /* elephant.png */; };
 		4C6ED6BD22CC142500581819 /* gorilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6ED6B722CC142500581819 /* gorilla.png */; };
+		4C6ED6BF22CC2E3C00581819 /* ScreenTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6ED6BE22CC2E3C00581819 /* ScreenTwoViewController.swift */; };
+		4C6ED6C122CC337200581819 /* ScreenThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6ED6C022CC337200581819 /* ScreenThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4C6ED6B322CC142500581819 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
 		4C6ED6B422CC142500581819 /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
 		4C6ED6B722CC142500581819 /* gorilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gorilla.png; sourceTree = "<group>"; };
+		4C6ED6BE22CC2E3C00581819 /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
+		4C6ED6C022CC337200581819 /* ScreenThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				4C6ED6A522CC126300581819 /* Images */,
 				4C6ED69322CC11B500581819 /* AppDelegate.swift */,
 				4C6ED69522CC11B500581819 /* ViewController.swift */,
+				4C6ED6C022CC337200581819 /* ScreenThreeViewController.swift */,
 				4C6ED69722CC11B500581819 /* Main.storyboard */,
+				4C6ED6BE22CC2E3C00581819 /* ScreenTwoViewController.swift */,
 				4C6ED69A22CC11B700581819 /* Assets.xcassets */,
 				4C6ED69C22CC11B700581819 /* LaunchScreen.storyboard */,
 				4C6ED69F22CC11B700581819 /* Info.plist */,
@@ -159,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6ED6BF22CC2E3C00581819 /* ScreenTwoViewController.swift in Sources */,
+				4C6ED6C122CC337200581819 /* ScreenThreeViewController.swift in Sources */,
 				4C6ED69622CC11B500581819 /* ViewController.swift in Sources */,
 				4C6ED69422CC11B500581819 /* AppDelegate.swift in Sources */,
 			);
