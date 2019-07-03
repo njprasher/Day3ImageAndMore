@@ -139,10 +139,7 @@
                         <viewLayoutGuide key="safeArea" id="NRJ-G3-D6P"/>
                     </view>
                     <navigationItem key="navigationItem" id="juA-fC-cYk">
-                        <rightBarButtonItems>
-                            <barButtonItem id="Wvf-dc-qcn"/>
-                            <barButtonItem systemItem="trash" id="xFb-S8-sgT"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" id="Wvf-dc-qcn"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bK3-9I-yKe" userLabel="First Responder" sceneMemberID="firstResponder"/>

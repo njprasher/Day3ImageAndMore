@@ -14,13 +14,15 @@ class ScreenThreeViewController: UIViewController {
         super.viewDidLoad()
         //hiding back button
         navigationItem.hidesBackButton = true
-        let buttonHome = UIBarButtonItem(title: "Main", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ScreenThreeViewController.goToHome))
+        let buttonHome = UIBarButtonItem(title: "Home", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ScreenThreeViewController.goToHome))
         self.navigationItem.rightBarButtonItem = buttonHome
         // Do any additional setup after loading the view.
     }
     
     @objc func goToHome(){
-        self.navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
+        //self.navigationController?.popToViewController((navigationController?.viewControllers[0])!, animated: true)
+        
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
     /*
